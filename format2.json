@@ -1,0 +1,96 @@
+[{
+	"header": {
+		"stream": 2,
+		"function": 3,
+		"reply": true
+	},
+	"body": [{
+			"format": "A",
+			"value": "This is some text that\ngets to the next line\n and the next line and possibly any number of lines."
+		},
+		[{
+			"format": "U4",
+			"value": 6
+		}, {
+			"format": "Boolean",
+			"value": true
+		}, {
+			"format": "F4",
+			"value": 5.21
+		}],
+		[{
+				"format": "A",
+				"value": "More text"
+			},
+			[{
+				"format": "U4",
+				"value": 8
+			}]
+		]
+	]
+}, {
+	"header": {
+		"stream": 10,
+		"function": 11,
+		"reply": false
+	},
+	"body": {
+		"format": "A",
+		"value": "test2"
+	}
+}, {
+	"header": {
+		"stream": 9,
+		"function": 1,
+		"reply": false
+	},
+	"body": []
+}, {
+	"header": {
+		"stream": 1,
+		"function": 15,
+		"reply": true
+	},
+	"body": [{
+			"format": "Boolean",
+			"value": [true, false, true, true, false]
+		}, {
+			"format": "U4",
+			"value": [3, 5, 6, 3, 7, 2, 6]
+		}, {
+			"format": "F4",
+			"value": 9
+		},
+		[{
+				"format": "U4",
+				"value": 4
+			},
+			[{
+				"format": "F4",
+				"value": [4.6, 9.3]
+			}, {
+				"format": "Boolean",
+				"value": false
+			}],
+			[
+				[
+					[{
+							"format": "U4",
+							"value": 5
+						},
+						[]
+					]
+				],
+				[{
+						"format": "A",
+						"value": "test3"
+					}, {
+						"format": "A",
+						"value": "test\n4"
+					},
+					[]
+				]
+			]
+		]
+	]
+}]

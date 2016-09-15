@@ -1,0 +1,50 @@
+data = """
+
+S2F3 
+accept reply: true
+L,3
+ASC,"This is some text that 
+gets to the next line
+and the next line and possibly any number of lines." 
+L,3
+integer,6
+bool,true
+float,5.21
+L,2
+ASC,"More text"
+L,1
+integer,8
+
+S10F11
+accept reply: false
+asc,"test2"
+
+
+S9F1
+accept reply: false
+L,0
+
+S1F15
+accept reply: true
+L,4
+bool,true,false,true,true,false
+Integer,3,5,6,3,7,2,6 
+float,9
+L,3
+integer,4
+L,2
+float, 4.6,9.3
+
+bool, false
+L,2
+L,1
+L,2	
+integer,5
+L,0
+L,3
+asc,"test3"
+asc,"test
+4"
+L,0
+
+"""
