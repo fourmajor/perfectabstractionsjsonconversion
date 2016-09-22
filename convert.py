@@ -62,8 +62,11 @@ def createnestedbody(itembody, level):
 						itemsplit[1:] = map(int, itemsplit[1:])
 					elif(itemsplit[0].lower() == "asc") :
 						itemsplit[0] = "A"
+						
+						# strip both newlines and quotes from beginning and end
+						# of the strings
 						itemsplit[1:] = \
-						[string.strip(x, "\"") for x in itemsplit[1:]]
+						[string.strip(x, "\"\n") for x in itemsplit[1:]]
 					elif(itemsplit[0].lower() == "bool") :
 						itemsplit[0] = "Boolean"
 						itemsplit[1:] = \
